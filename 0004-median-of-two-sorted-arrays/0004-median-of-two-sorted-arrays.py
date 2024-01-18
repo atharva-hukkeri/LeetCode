@@ -1,7 +1,6 @@
 class Solution:
     def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
         merge = []
-        m = 0
         n1 = 0
         n2 = 0
         
@@ -14,8 +13,6 @@ class Solution:
             else:
                 merge.append(val2)
                 n2 += 1
-            
-            m += 1
         
         mid = len(merge) // 2
         o_e = len(merge) % 2
