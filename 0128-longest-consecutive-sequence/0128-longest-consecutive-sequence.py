@@ -12,4 +12,3 @@ class Solution:
                 ans = max(ans, k)
                 
         return ans
-            
